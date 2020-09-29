@@ -1,0 +1,64 @@
+<!--Referrences-->
+<!--https://bl.ocks.org/Fil/6d9de24b31cb870fed2e6178a120b17d-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scatter Plot Matrix</title>
+    <script src="https://d3js.org/d3.v6.js"></script>
+</head>
+<style>
+
+    svg {
+        font: 10px sans-serif;
+        padding: 10px;
+    }
+
+    .axis,
+    .frame {
+        shape-rendering: crispEdges;
+    }
+
+    .axis line {
+        stroke: #ddd;
+    }
+
+    .axis path {
+        display: none;
+    }
+
+    .cell text {
+        font-weight: bold;
+        text-transform: capitalize;
+        fill: black;
+    }
+
+    .frame {
+        fill: none;
+        stroke: #aaa;
+    }
+
+    circle {
+        fill-opacity: .7;
+    }
+
+    circle.hidden {
+        fill: #ccc !important;
+    }
+
+    .extent {
+        fill: #000;
+        fill-opacity: .125;
+        stroke: #fff;
+    }
+
+</style>
+<body>
+
+<div id="my_dataviz"></div>
+
+<script src = "A6ScatterPlotMatrix.js"></script>
+
+</body>
+</html>
