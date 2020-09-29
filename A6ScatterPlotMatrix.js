@@ -49,7 +49,7 @@ d3.csv("video_games.csv").then((data) => {
         .attr("y", 1)
         .attr("text-anchor", "middle")
         .style("font-size", "13px")
-        .text("Scatter plt matrix of video games in years (2004-2010)");
+        .text("Scatter plot matrix of video games in years (2004-2010)");
 
     svg.selectAll(".x.axis")
         .data(dimensions)
